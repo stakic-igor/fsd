@@ -1,3 +1,11 @@
 @import "_vendors/_reset";
-@import "_vendors/_vars";
+@import "_helpers/_vars";
 @import "_helpers/_mixin";
+
+body{
+  font-size: 16px;
+}
+
+.header{
+  background-color: $white;
+}
