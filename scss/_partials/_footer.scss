@@ -1,4 +1,72 @@
 .footer{
   border-top: 1px solid #f2f2f2;
   padding: 3.500rem 0;
+  position: relative;
+  &:after{
+    content: '';
+    opacity: 0.5;
+    z-index: -1;
+    @include position(absolute, 0, 0, 0, 0);
+    @include background-img("pattern-bg.jpg", $repeat: repeat);
+  }
+}
+//disclamer
+.disclamer{
+  &__paragraph{
+    color: $baseGray;
+    font-size: 1em;
+    letter-spacing: -1px;
+    line-height: 1.125em;
+    margin-top: 2em;
+  }
+}
+
+//contact
+.contact{
+  &__list{
+    &__item{
+      color: $baseGray;
+      letter-spacing: -1px;
+      line-height: 1.250;
+      margin: 0.750em 0;
+    }
+  }
+}
+// newest news
+.newest-news{
+  &__list{
+
+    &__item{
+      border-bottom: 1px solid #c9c9c9;
+      letter-spacing: -1px;
+      padding: 1.250em 0;
+      &:first-child{
+        padding-top: 0;
+      }
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+  &__link{
+    color: $baseGray;
+    text-decoration: none;
+  }
+}
+//site map
+.site-map{
+  &__list{
+
+    &__item{
+      margin: 0.750em 0;
+      letter-spacing: -1px;
+    }
+  }
+  &__link{
+    color: $baseGray;
+    text-decoration: none;
+    &:hover{
+      color: $red;
+    }
+  }
 }

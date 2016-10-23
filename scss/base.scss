@@ -2,6 +2,7 @@
 @import "_vendors/_reset";
 @import "_helpers/_vars";
 @import "_helpers/_mixin";
+@import "_helpers/_html-elements";
 
 
 //general settings
@@ -16,20 +17,20 @@ body{
 }
 
 //load header
-@import "_partials/_header.scss";
+@import "_partials/_header";
 
 //load slider
-@import "_partials/_slider.scss";
+@import "_partials/_slider";
 
 //load services
-@import "_partials/_services.scss";
+@import "_partials/_services";
 
 // load testimonials
-@import "_partials/_testimonial.scss";
+@import "_partials/_testimonial";
 
 //load footer
-@import "_partials/_footer.scss";
+@import "_partials/_footer";
 
 //load elements
-@import "_elements/_buttons.scss";
-@import "_elements/_headings.scss";
+@import "_elements/_buttons";
+@import "_elements/_headings";
