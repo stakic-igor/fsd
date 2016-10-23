@@ -1,5 +1,4 @@
 // position mixin
-
 @mixin position($position, $top: null, $right: null, $bottom: null, $left:null) {
   position: $position;
   top: $top;
@@ -9,9 +8,55 @@
 }
 
 // box shadow mixin
-
 @mixin box-shadow($value) {
-    -webkit-box-shadow: $value;
-    -moz-box-shadow: $value;
-    box-shadow: $value;
+  box-shadow: $value;
+}
+
+// border radius
+@mixin border-radius($r, $border-position...) {
+  $border-position-exist: false;
+    @each $position in $border-position {
+      $border-position-exist: true;
+      border-#{$position}-radius: $r;
+      background-clip: padding-box; // prevents color frow leaking - test it!
+    }
+  @if $border-position-exist == false {
+    border-radius: $r;
+    background-clip: padding-box;
+  }
+}
+//simple grid mixin
+.row{
+  font-size: 0;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+$col-: col !default;
+$gutter: 10px;
+@for $i from 16 through 1{
+  .#{$col-}-#{$i}{
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16px;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    vertical-align: top;
+    width: percentage($i / 16);
+    &.no-gutter{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+@media screen and (max-device-width: 768px) {
+  $col-list: null;
+  @for $i from 16 through 1{
+    .#{$col-}-#{$i}{
+    $col-list: append($col-list, unquote(".#{$col-}-#{$i}"), comma);
+    }
+  }
+  #{$col-list} {
+    width: 100%;
+  }
 }

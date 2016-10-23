@@ -1,0 +1,11 @@
+.testimonials{
+  background-color: $white;
+  padding: 6rem 0;
+  text-align: center;
+  &__single__paragraph{
+    color: $baseGray;
+    font-size: 1.250em;
+    letter-spacing: -1px;
+    line-height: 1.5;
+  }
+}
