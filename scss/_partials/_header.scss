@@ -1,0 +1,8 @@
+.header{
+  background-color: $white;
+  box-sizing: border-box;
+  height: 7.25rem;
+  @include box-shadow(0 0 .25em .25em rgba($black, .2));
+}
+
+@import "../_elements/_logo";

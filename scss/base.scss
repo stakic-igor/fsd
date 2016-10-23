@@ -15,14 +15,14 @@ body{
   margin-right: auto;
 }
 
-.header{
-  background-color: $white;
-  box-sizing: border-box;
-  height: 7.25rem;
-  @include box-shadow(0 0 .25em .25em rgba($black, .2));
-}
+//load header
+@import "_partials/_header.scss";
+
 //load slider
 @import "_partials/_slider.scss";
+
+//load services
+@import "_partials/_services.scss";
 
 // load testimonials
 @import "_partials/_testimonial.scss";

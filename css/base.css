@@ -45,6 +45,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*background image*/
+/*path*/
 .row {
   font-size: 0;
   max-width: 980px;
@@ -261,11 +263,34 @@ body {
   height: 7.25rem;
   box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.2); }
 
+.logo {
+  color: #da251d;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  text-decoration: none; }
+
 .slider {
   border-bottom: 6px solid #da251d;
   box-sizing: border-box;
   height: 46.25rem;
   width: 100%; }
+
+.services {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 6em 0 3em 0; }
+  .services__icon {
+    background-color: #484848;
+    display: inline-block;
+    height: 51px;
+    margin-right: 1rem;
+    width: 51px;
+    border-radius: 50%;
+    background-clip: padding-box; }
+    .services__icon__tyre {
+      background-image: url("../../images/icon-tyre.png");
+      background-position: 16px center;
+      background-repeat: no-repeat; }
 
 .testimonials {
   background-color: #fff;
@@ -307,5 +332,43 @@ body {
     .rounded__dark__active {
       background-color: #fff;
       box-shadow: unset; }
+
+.h2 {
+  color: #272727;
+  font-size: 2.250em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-bottom: 1em;
+  text-align: center; }
+  .h2__lines-at-bottom {
+    overflow: hidden; }
+    .h2__lines-at-bottom span {
+      display: inline-block;
+      position: relative; }
+      .h2__lines-at-bottom span:before, .h2__lines-at-bottom span:after {
+        border-bottom: 1px solid #efefef;
+        bottom: 10%;
+        content: "";
+        position: absolute;
+        width: 100%; }
+      .h2__lines-at-bottom span:before {
+        margin-right: 30%;
+        right: 100%; }
+      .h2__lines-at-bottom span:after {
+        left: 100%;
+        margin-left: 30%; }
+
+.service__title {
+  color: #272727;
+  font-size: 2.250em;
+  letter-spacing: -1px;
+  margin-bottom: 1em; }
+
+.h3 {
+  color: #272727;
+  font-size: 1.500em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-bottom: 1.500em; }
 
 /*# sourceMappingURL=base.css.map */

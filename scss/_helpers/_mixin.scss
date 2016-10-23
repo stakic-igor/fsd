@@ -25,6 +25,20 @@
     background-clip: padding-box;
   }
 }
+
+/*background image*/
+/*path*/
+$path: "../../images";
+@mixin background-img($image, $position: null null, $size: null null, $repeat: null, $origin: null, $clip: null, $attachment: null, $color: null) {
+  background-image: url('#{$path}/#{$image}');
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+  background-origin: $origin;
+  background-clip: $clip;
+  background-attachment: $attachment;
+  background-color: $color;
+}
 //simple grid mixin
 .row{
   font-size: 0;
