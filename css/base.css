@@ -203,8 +203,13 @@ table {
 .strong {
   font-weight: 700; }
 
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato-webfont.woff2") format("woff2"), url("../fonts/lato-pro-regular-webfont.ttf") format("truetype"), url("../fonts/lato-pro-regular-webfont.svg#sofia_regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px; }
 
 .header {
