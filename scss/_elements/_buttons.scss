@@ -1,5 +1,4 @@
 //all butons and CTA-s
-
 .rounded{
   box-sizing: border-box;
   display: inline-block;
@@ -22,11 +21,29 @@
     }
   }
   &__dark{
-    background-color: #f0f0f0;
+    background-color: #565656;
     @include box-shadow(inset 0 3px 5px -3px rgba($black, .4));
     &__active{
       background-color: $white;
       box-shadow: unset;
     }
+  }
+}
+
+.btn{
+  background-color: $red;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: $white;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  min-width: 208px;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  &--shadow{
+    @include box-shadow(0 .25em darken($red, 10%));
   }
 }

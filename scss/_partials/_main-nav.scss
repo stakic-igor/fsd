@@ -1,0 +1,59 @@
+.main-nav{
+  display: block;
+  font-size: 16px;
+  float: right;
+  line-height: 7.250em;
+  text-align: right;
+  width: 80%;
+  &__list{
+    &__item{
+      display: inline-block;
+      position: relative;
+      margin-left: 1.500%;
+      &:hover:before{
+        background-color: $red;
+        content: '';
+        display: block;
+        height: 5px;
+        width: 100%;
+        @include border-radius(3px, bottom-left, bottom-right);
+        @include position(absolute, $top: 0, $left: 0);
+      }
+      &__social{
+        display: inline-block;
+        position: relative;
+        margin-left: 1%;
+      }
+    }
+  }
+  &__link{
+    color:#b7b7b7;
+    font-size: 0.750em;
+    font-weight: 700;
+    padding: 3.125rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover,
+    &focus{
+      color: #272727;
+    }
+    &__social{
+      display: inline-block;
+      height: 22px;
+      vertical-align: middle;
+      width: 27px;
+      &__twitter{
+        @include background-img("social-sprite.png", $position: 0 0, $repeat: no-repeat);
+        &:hover{
+          background-position: 0px -22px;
+        }
+      }
+      &__facebook{
+        @include background-img("social-sprite.png", $position: -27px 0px, $repeat: no-repeat);
+        &:hover{
+          background-position: -27px -22px;
+        }
+      }
+    }
+  }
+}

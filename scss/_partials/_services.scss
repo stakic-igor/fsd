@@ -13,4 +13,19 @@
       @include background-img("icon-tyre.png", $position: 16px center, $repeat: no-repeat);
     }
   }
+  &__desc{
+    width: calc(100% - 51px);
+    margin-left: 51px
+  }
+  &__img{
+    display: block;
+    height: auto;
+    margin-bottom: 1.500em;
+    width: 100%;
+  }
+  &__paragraph{
+    color: $baseGray;
+    letter-spacing: -1px;
+    line-height: 1.250;
+  }
 }

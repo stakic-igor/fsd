@@ -1,3 +1,10 @@
+.h1{
+  color:$white;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 1.250rem;
+}
 .h2{
   color: $darkGray;
   font-size: 2.250em;
@@ -28,11 +35,13 @@
     }
   }
 }
-.service__title{
+.services__title{
   color: $darkGray;
+  display: inline-block;
   font-size: 2.250em;
   letter-spacing: -1px;
   margin-bottom: 1em;
+  vertical-align: middle;
 }
 .h3{
   color: $darkGray;

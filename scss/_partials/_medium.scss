@@ -1,0 +1,24 @@
+@media screen and (max-device-width:768px) {
+  //services
+  .services{
+    &__box{
+      margin-top: 3em;
+    }
+    &__desc{
+      width: 100;
+      margin: auto;
+    }
+  }
+  //footer
+  .disclamer, .contact, .newest-news, .site-map{
+    margin: 1.5em 0;
+    text-align: center;
+  }
+  // newest news
+  .newest-news{
+    &__list{
+      margin:0 auto;
+      width: 60%;
+    }
+  }
+}

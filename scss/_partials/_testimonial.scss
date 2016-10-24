@@ -2,10 +2,17 @@
   background-color: $white;
   padding: 6rem 0;
   text-align: center;
-  &__single__paragraph{
-    color: $baseGray;
-    font-size: 1.250em;
-    letter-spacing: -1px;
-    line-height: 1.5;
+  &__single{
+    height: 140px;
+    position: relative;
+      &__paragraph{
+        color: $baseGray;
+        display: none;
+        font-size: 1.250em;
+        letter-spacing: -1px;
+        line-height: 1.5;
+        margin-bottom: 2.250em;
+        position: absolute;
+      }
   }
 }

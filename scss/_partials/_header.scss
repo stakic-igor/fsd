@@ -2,7 +2,10 @@
   background-color: $white;
   box-sizing: border-box;
   height: 7.25rem;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
   @include box-shadow(0 0 .25em .25em rgba($black, .2));
 }
-
+@import "_main-nav";
 @import "../_elements/_logo";
