@@ -1,5 +1,21 @@
 @media screen and (max-device-width:768px) {
-  //services
+  /*slider*/
+  .slider{
+    &__read-more{
+      bottom: -80px;
+      height: 160px;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+          text-align: center;
+      width: 80%;
+    }
+    &__img{
+      display: block;
+      height: 100%;
+      width: auto;
+    }
+  }
+  /*services*/
   .services{
     &__box{
       margin-top: 3em;
@@ -9,12 +25,12 @@
       margin: auto;
     }
   }
-  //footer
+  /*footer*/
   .disclamer, .contact, .newest-news, .site-map{
     margin: 1.5em 0;
     text-align: center;
   }
-  // newest news
+  /* newest news*/
   .newest-news{
     &__list{
       margin:0 auto;
